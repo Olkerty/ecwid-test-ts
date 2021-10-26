@@ -11,3 +11,134 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.product-item__image {
+  max-width: 400px;
+  max-height: 400px;
+}
+
+@media all and (max-width: 450px) {
+  .product-item__image {
+    max-width: unset;
+    max-height: unset;
+    width: 90vw;
+    height: 90vw;
+  }
+}
+
+.product-item__image_on-page {
+  max-width: 700px;
+  max-height: 700px;
+}
+
+.App__navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-height: 20px;
+}
+
+.App__nav-link {
+  padding: 5px;
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  border: 1px solid teal
+}
+
+.App__nav-link:hover {
+  opacity: 0.7;
+}
+
+.App__nav-link_basket {
+  background-image: url('./images/cart-svgrepo-com.svg');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 25px 25px;
+  padding-left: 25px;
+
+}
+
+.button {
+  border: none;
+  border: 1px solid teal;
+  background-color: transparent;
+}
+
+.button:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.basket__button{
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+}
+
+.button__back{
+  width: 90px;
+  height: 25px;
+}
+
+.button__buy {
+  width: 75px;
+  height: 25px;
+}
+
+.button__delete{ 
+  width: 90px;
+  height: 25px;
+}
+
+.basket-item__information {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.category-item {
+  font-size: 25px;
+  border: 1px solid gray;
+  max-width: 100px;
+  padding: 5px;
+}
+
+.category-item:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.category__information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid gray;
+
+}
+
+.productItem{
+  margin: auto;
+  padding: 5px;
+  border: 1px solid gray;
+  max-width: 400px;
+}
+
+@media all and (max-width:320px) {
+  .productItem {
+    max-width: unset;
+    width: 90vw;
+  }
+}
+
+.list {
+  max-width: max-content;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cards-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
